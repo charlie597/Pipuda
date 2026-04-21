@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pipuda - The Most Boring Multiplayer Game Ever</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #f0f0f0;">
+  <div id="game">
+    <div id="player"></div>
+  </div>
+
+  <div id="controls">
+    <h3>Controls</h3>
+    <p>WASD to move</p>
+  </div>
+
+  <div id="customization">
+    <h3>Customize</h3>
+    <label>Color: <input type="color" id="colorPicker" value="#3498db"></label><br>
+    <label>Size: <input type="range" id="sizeSlider" min="20" max="100" value="40"></label><br>
+    <label>Shape: 
+      <select id="shapeSelect">
+        <option value="circle">Circle</option>
+        <option value="square">Square</option>
+        <option value="triangle">Triangle</option>
+      </select>
+    </label>
+  </div>
+
+  <div id="status">Connecting to server...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<div class="shape-container">
+  <div class="shape" id="shape1"></div>
+</div>

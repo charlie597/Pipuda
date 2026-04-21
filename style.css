@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#game {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  border-radius: 50%;
+}
+
+#controls {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#customization {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button, input {
+  margin: 5px;
+  padding: 5px;
+}
+.shape-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.shape {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+.shape::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.shape::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  width: 30px;
+  height: 20px;
+  background-color: #007bff;
+}
